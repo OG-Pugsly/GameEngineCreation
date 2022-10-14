@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4ac3e87e-5f49-423a-9d3f-d525e671dc89}</ProjectGuid>
-    <RootNamespace>Program10SwitchStatementPlayAgain</RootNamespace>
+    <ProjectGuid>{58539898-4070-4201-87c2-1d21cd802c4f}</ProjectGuid>
+    <RootNamespace>Project9ShareOfSavings</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

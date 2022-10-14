@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{4ac3e87e-5f49-423a-9d3f-d525e671dc89}</ProjectGuid>
-    <RootNamespace>Program10SwitchStatementPlayAgain</RootNamespace>
+    <ProjectGuid>{db40dced-cf71-49fd-a9e2-cdb1bb0bf097}</ProjectGuid>
+    <RootNamespace>Project10ShareOfHaribo</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />

@@ -23,10 +23,6 @@ int main()
 	cout << DisplayCards();
 }
 
-
-
-
-
 void InitialiseDeck()
 {
 	shuffle(cards, cards + 10, default_random_engine(69));

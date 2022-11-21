@@ -2,32 +2,65 @@
 #include <algorithm>
 #include <random>
 using namespace std;
-
 char cards[10] = 
 {
 	'A' , 'A' , 'B' , 'B' , 'C' , 'C' , 'D' , 'D' , 'E' , 'E'
 };
-bool cardsFound[5] =
+bool cardsFound[10] =
 {
-	false, false, false, false, false
+	false, false, false, false, false, false, false, false, false, false
 };
 int numOfTries = 0;
-
 void InitialiseDeck();
 string DisplayCards();
-bool TakeGuess(int cardOne, int cardTwo);
+void TakeGuess(int cardOne, int cardTwo);
+void CheckScore();
+bool gameComplete = false;
+int numOfGuesses = 0;
 
 int main()
 {
 	InitialiseDeck();
-	cout << DisplayCards();
+	int guessOne;
+	int guessTwo;
+	
+	while (!gameComplete)
+	{
+		CheckScore();
+		if (gameComplete)
+		{
+			system("cls");
+			string winString = "You won kiddo! It took " + numOfGuesses + (string)" attempts.";
+			cout << winString << endl;
+			return 0;
+		}
+		cout << DisplayCards() << endl;
+		cout << "Pick a card! (Choose a number between 1 and 10)" << endl;
+		cin >> guessOne;
+		if (guessOne < 1 || guessOne > 10)
+			cout << "Hear me now! Use a number between 1 and 10..." << endl;
+		cout << "Pick a card!" << endl;
+		cin >> guessTwo;
+		if (guessTwo < 1 || guessTwo > 10)
+			cout << "Hear me now! Use a number between 1 and 10..." << endl;
+		cout << endl;
+		
+		TakeGuess(guessOne, guessTwo);
+	}
+	if (gameComplete)
+	{
+		system("cls");
+		string winString = "You won kiddo! It took " + numOfGuesses + (string)" attempts.";
+		cout << winString << endl;
+		return 0;
+	}
 }
-
 void InitialiseDeck()
 {
-	shuffle(cards, cards + 10, default_random_engine(69));
+	srand(time_t(NULL));
+	int seed = rand() % 69696969;
+	shuffle(cards, cards + 10, default_random_engine(seed));
 }
-
 string DisplayCards()
 {
 	string CardDisplay;
@@ -38,14 +71,48 @@ string DisplayCards()
 			CardDisplay += "\n";
 		}
 		CardDisplay += "[";
-		CardDisplay += cards[card];
+		if (cardsFound[card] == true)
+		{
+				CardDisplay += cards[card];
+		}
+		else
+		{
+				CardDisplay += "X";
+		}
+
 		CardDisplay += "]";
 	}
-
 	return CardDisplay;
 }
-
-bool TakeGuess(int cardOne, int cardTwo)
+void TakeGuess(int cardOne, int cardTwo)
 {
-	return false;
+	numOfGuesses++;
+	system("cls");
+
+	if (cards[cardOne-1] == cards[cardTwo-1])
+	{
+		cout << "Breh be correct my man!" << endl;
+		cardsFound[cardOne - 1] = true;
+		cardsFound[cardTwo - 1] = true;
+	}
+	else
+	{
+		cout << "Oof my man, Game face brah!" << endl;
+	}
+	DisplayCards();
+}
+void CheckScore()
+{
+	int numberCorrect = 0;
+	for (int correctAnswers = 0; correctAnswers < size(cardsFound); correctAnswers++)
+	{
+		if (cardsFound[correctAnswers] == true)
+		{
+			numberCorrect += 1;
+		}
+		if (numberCorrect == 10)
+		{
+			gameComplete = true;
+		}
+	}
 }

@@ -1,6 +1,7 @@
 #include <iostream>
-#include <algorithm>
 #include <random>
+#include <string>
+
 using namespace std;
 char cards[10] = 
 {
@@ -20,20 +21,13 @@ int numOfGuesses = 0;
 
 int main()
 {
+	system("color 0a");
 	InitialiseDeck();
 	int guessOne;
 	int guessTwo;
 	
 	while (!gameComplete)
 	{
-		CheckScore();
-		if (gameComplete)
-		{
-			system("cls");
-			string winString = "You won kiddo! It took " + numOfGuesses + (string)" attempts.";
-			cout << winString << endl;
-			return 0;
-		}
 		cout << DisplayCards() << endl;
 		cout << "Pick a card! (Choose a number between 1 and 10)" << endl;
 		cin >> guessOne;
@@ -46,11 +40,13 @@ int main()
 		cout << endl;
 		
 		TakeGuess(guessOne, guessTwo);
+		CheckScore();
 	}
 	if (gameComplete)
 	{
-		system("cls");
-		string winString = "You won kiddo! It took " + numOfGuesses + (string)" attempts.";
+		string winString = "You won kiddo! It took ";
+		winString += to_string(numOfGuesses);
+		winString += " attempts.";
 		cout << winString << endl;
 		return 0;
 	}
@@ -89,7 +85,11 @@ void TakeGuess(int cardOne, int cardTwo)
 	numOfGuesses++;
 	system("cls");
 
-	if (cards[cardOne-1] == cards[cardTwo-1])
+	if (cardOne == cardTwo)
+	{
+		cout << "Choose two different cards!" << endl;
+	}
+	else if (cards[cardOne-1] == cards[cardTwo-1])
 	{
 		cout << "Breh be correct my man!" << endl;
 		cardsFound[cardOne - 1] = true;

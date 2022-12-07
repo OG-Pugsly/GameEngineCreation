@@ -13,7 +13,7 @@ bool OddOrEven(int numToCheck);
 
 int main()
 {
-	cout << "Please eneter 10 numbers" << endl;
+	cout << "Please enter 10 numbers" << endl;
 	for (int i = 0; i < 10; i++)
 	{
 		cin >> userInputs[i];

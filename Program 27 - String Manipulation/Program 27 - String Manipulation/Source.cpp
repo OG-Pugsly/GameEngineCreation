@@ -17,7 +17,7 @@ int main()
 	cout << testString << endl;
 
 	string secondUserName;
-	cout << "Please enter a new name." << endl;
+	cout << "Please enter a new name. (Longer than the first)" << endl;
 	getline(cin, secondUserName);
 
 	testString.replace(testString.rfind(firstUserName), firstUserName.length(), "");

@@ -29,7 +29,6 @@ int main()
 		if (playAgainChoice == 'n' || playAgainChoice == 'N')
 		{
 			playAgain = false;
-
 			cout << "Goodbye" << endl;
 			Sleep(3000);
 			return 0;

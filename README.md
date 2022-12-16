@@ -94,7 +94,7 @@ This program share out packets of haribo based on number of students, giving eac
 
 ## Program 11 - "Doom Difficulty Menu"
 
-
+A program for a difficulty menu. User is able to choose from a variety of difficulties and then presented with a small description of the difficulty. A "char" variable and a "bool" variable are initilaised. The char is for selection and the bool to confirm user has input a correct selection. "cin" was introduced in this program to take the selection from the user. Upon selection of difficulty a "cout" statement will be used to display the decription fo the difficulty. A switch statement is used to determine which description is to be displayed.
 
 ## Program 12 - "If This Then That"
 

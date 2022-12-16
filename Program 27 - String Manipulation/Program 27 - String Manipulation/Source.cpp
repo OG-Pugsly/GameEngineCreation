@@ -12,12 +12,17 @@ int main()
 	cout << testString << endl;
 
 	testString.replace(testString.rfind("XX"),2,"");
+	testString.insert(27, "X" + firstUserName + "X", 0, firstUserName.length() + 2);
+
+	cout << testString << endl;
+
+	testString.replace(testString.rfind("X" + firstUserName + "X"), firstUserName.length() + 2, "");
 	testString.insert(27, firstUserName, 0, firstUserName.length());
 
 	cout << testString << endl;
 
 	string secondUserName;
-	cout << "Please enter a new name." << endl;
+	cout << "Please enter a new name. (Longer than the first)" << endl;
 	getline(cin, secondUserName);
 
 	testString.replace(testString.rfind(firstUserName), firstUserName.length(), "");

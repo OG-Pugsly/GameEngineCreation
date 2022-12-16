@@ -48,21 +48,29 @@
 
 ## Introduction
 
+Greetings and welcome to my Game Engine Creation semester 1 repository. Here are descriptions of each of the programs involved in the semester's work.
+
 
 ## Program 1 - "Hello World"
+
+This was an introductory program to get us use to c++ coding conventions. "Hello World" programs are typically used for this purpose. Program outputs "Hello world" as a string into the console. This string is not saved nor input by user. Use of "cout" to print text to console.
 
 
 ## Program 2 - "Data Type Size"
 
+A program to show the memory sizes of various data types. This began to introduce variables starting with the types that they can be.
 
 ## Program 3 - "Defining Variables"
 
+A program that introduced use of variables. Use of int, float and char initialisation, setting and getting. "cout" used to display value held in variable.
 
 ## Program 4 - "Defining User-Defined Variables"
 
+A program that expanded on variable manipulation. Here use of typedef to create a custom int variable and also use of an enum structure. "cout" used to display variable values. 
 
 ## Program 5 - "Increment/Decrement Operator"
 
+A program showing use case of increment and decrement operators.  "int" variable is intialised and given a value. This value is then incremented and decremented over the course of the program with "cout" statements to show to the user the current value.
 
 ## Program 6 - "Area of a Rectangle"
 

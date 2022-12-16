@@ -16,6 +16,7 @@ int main()
 	cout << num << endl;
 	Subtract25(rNum);
 	cout << num << endl;
+	return 0;
 }
 
 void Add25(int& RefNum)

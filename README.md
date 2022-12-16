@@ -44,3 +44,129 @@
 40. Program 39 - "Top Ten Scores"
 41. Program 40 - "ePet Care"
 42. Conclusion of Semester 1 Work
+
+
+## Introduction
+
+
+## Program 1 - "Hello World"
+
+
+## Program 2 - "Data Type Size"
+
+
+## Program 3 - "Defining Variables"
+
+
+## Program 4 - "Defining User-Defined Variables"
+
+
+## Program 5 - "Increment/Decrement Operator"
+
+
+## Program 6 - "Area of a Rectangle"
+
+
+## Program 7 - "Converting from Farenheit to Celsius"
+
+
+## Program 8 - "Area of a Circle"
+
+
+## Program 9 - "Share of Savings"
+
+
+## Program 10 - "Share of Haribo"
+
+
+## Program 11 - "Doom Difficulty Menu"
+
+
+## Program 12 - "If This Then That"
+
+
+## Program 13 - "Discount"
+
+
+## Program 14 - "10 Numbers"
+
+
+## Program 15 - "Starry Output"
+
+
+## Program 16 - "Early Exit"
+
+
+## Program 17 - "Local Variables & Copies"
+
+
+## Program 18 - "Smallest Number"
+
+
+## Program 19 - "Odds and Evens"
+
+
+## Program 20 - "Simple Text Battle"
+
+
+## Program 21 - "Matching Pairs"
+
+
+## Program 22 - "Ordered Output"
+
+
+## Program 23 - "Inventory"
+
+
+## Program 24 - "Matching Pairs"
+
+
+## Program 25 - "Initials"
+
+
+## Program 26 - "Replacing Characters"
+
+
+## Program 27 - "String Manipulation"
+
+
+## Program 28 - "Strings and Vectors"
+
+
+## Program 29 - "Rock, Paper, Scissors"
+
+
+## Program 30 - "Broken Code"
+
+
+## Program 31 - "Unexpected Code"
+
+
+## Program 32 - "Broken BMI"
+
+
+## Program 33 - "Structs"
+
+
+## Program 34 - "Replacing Commas with spaces"
+
+
+## Program 35 - "The Changing Pointer"
+
+
+## Program 36 - "Using References"
+
+
+## Program 37 - "Designated Username"
+
+
+## Program 38 - "Account Holding"
+
+
+## Program 39 - "Top Ten Scores"
+
+
+## Program 40 - "ePet Care"
+
+
+## Conclusion of Semester 1 Work

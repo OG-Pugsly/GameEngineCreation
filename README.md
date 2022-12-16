@@ -190,11 +190,11 @@ A program for a difficulty menu. User is able to choose from a variety of diffic
 
 ## Program 35 - "The Changing Pointer"
 
-
+Program 36 in github due to assessment document having mixed up program numbers. Program displays use of pointers and how they can be used to manipulate variable values.
 
 ## Program 36 - "Using References"
 
-
+Program 38 in github due to assessment document having mixed up program numbers. Program displays use of references and how they can be used to manipulate variable values. 
 
 ## Program 37 - "Designated Username"
 
@@ -206,12 +206,12 @@ A program for a difficulty menu. User is able to choose from a variety of diffic
 
 ## Program 39 - "Top Ten Scores"
 
-
+Work in progress.
 
 ## Program 40 - "ePet Care"
 
-
+Not currently done.
 
 ## Conclusion of Semester 1 Work
 
-
+Semester has given me a good understanding of C++ coding conventions. Teaching me use of variables, custom functions, structs, loops, branches, among other things. These have been introduced to us week by week with sensible pacing. Each exercise has built on knowledge gained from previous exercises culminating into complex programs. 
